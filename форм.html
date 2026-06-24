@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <body>
+    <div class="container">
+        <h1>Заповніть форму для відправки листа</h1>
+    </div>
+
+    <div class="form-container">
+    
+<form action="https://formspree.io/f/xjgryzzl" method="POST" class="my-form">
+    
+    ПІБ
+    <input name="Full_Name" type="text" required> 
+
+    <br>Вік <br>
+   
+    <input type="radio" name="Age" value="6-8">6-8<br>
+    <input type="radio" name="Age" value="9-12">9-12<br>
+    <input type="radio" name="Age" value="13-16">13-16<br>
+    <input type="radio" name="Age" value="17-18">17-18<br>
+
+    <br>
+    Дата народження
+    <input name="Birth_Date" type="text" value="24.12.2010">
+    
+    <br>
+    Адреса проживання 
+    <input name="Address" type="text">
+
+    <br>
+    Назва Табору
+    <input name="Camp_Name" type="text" value="Табір України">
+
+    <br>
+    ПІБ батька чи опікуна 
+    <input name="Parent_Name" type="text">
+
+    <div class="list">
+        Письмо батькам📩
+        <br>
+        <textarea name="Message" rows="4" cols="50">Привіт мамо...</textarea>
+    </div>
+
+    <br>
+    <input type="submit" value="Відіслати">
+    <button type="reset">Очистити</button>
+</form>
+    </div>
+</body>
+    <style>
+        body {
+            background-color: rgb(73, 77, 165);
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: rgba(240, 248, 255, 0.5); 
+            width: 60%;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: rgba(240, 248, 255, 0.6);
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        
+        .my-form {
+            line-height: 2; 
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="text"], 
+        input[type="date"],
+        textarea {
+            width: 100%;
+            max-width: 400px;
+            height: 30px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .list {
+            color: rgb(255, 0, 0);
+            margin-top: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button, input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+</html>
